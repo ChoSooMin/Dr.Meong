@@ -202,7 +202,7 @@
         {
             if (hasOnly)
             {
-                string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+                string strConn = "Server=[Server Info]"; // edit 20200916
 
                 string symptom = "";
                 string specific1 = "";
@@ -237,7 +237,7 @@
             }
             else
             {
-                string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+                string strConn = "Server=[Server Info]"; // edit 20200916
 
                 string symptom = "";
                 string specific1 = "";
@@ -419,7 +419,7 @@
             // 데이터베이스에서 종류에 따라 자주 발생하는 질병 찾아오기
             var DataList = new List<dogTypes>();
             {
-                string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+                string strConn = "Server=[Server Info]"; // edit 20200916
 
 
                 using (MySqlConnection connection = new MySqlConnection(strConn))
@@ -520,7 +520,7 @@
             // 데이터베이스에서 종류에 따라 자주 발생하는 질병 찾아오기
             var DataList = new List<dogTypeDisease>();
             {
-                string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+                string strConn = "Server=[Server Info]"; // edit 20200916
 
                 using (MySqlConnection connection = new MySqlConnection(strConn))
                 {
@@ -676,7 +676,7 @@
         {
             var DataList = new List<med>();
             {
-                string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+                string strConn = "Server=[Server Info]"; // edit 20200916
 
                 using (MySqlConnection connection = new MySqlConnection(strConn))
                 {
@@ -723,7 +723,7 @@
         {
             String category = "";
             {
-                string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+                string strConn = "Server=[Server Info]"; // edit 20200916
 
                 using (MySqlConnection connection = new MySqlConnection(strConn))
                 {
@@ -1007,7 +1007,7 @@
         {
             var data11 = new List<q2>();
 
-            string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+            string strConn = "Server=[Server Info]"; // edit 20200916
 
             using (MySqlConnection connection = new MySqlConnection(strConn))
             {
@@ -1234,7 +1234,7 @@
         // selected_s2 숫자 1 증가
         private void UpdateSelected_s2()
         {
-            string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+            string strConn = "Server=[Server Info]"; // edit 20200916
 
             using (MySqlConnection conn = new MySqlConnection(strConn))
             {
@@ -1259,7 +1259,7 @@
         private int GetSelectNum(int index_num)
         {
             int selNum = -1;
-            string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+            string strConn = "Server=[Server Info]"; // edit 20200916
 
 
             using (MySqlConnection conn = new MySqlConnection(strConn))
@@ -1361,7 +1361,7 @@
         private string GetDiseaseName(int index_num)
         {
             string disease = "";
-            string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+            string strConn = "Server=[Server Info]"; // edit 20200916
 
 
             using (MySqlConnection conn = new MySqlConnection(strConn))
@@ -1414,7 +1414,7 @@
         // 180624 수민 select_num update하기
         private void UpdateSelectNum(int selectIndex)
         {
-            string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+            string strConn = "Server=[Server Info]"; // edit 20200916
 
             using (MySqlConnection conn = new MySqlConnection(strConn))
             {
@@ -1437,7 +1437,7 @@
         // selected_s1 증가시키는 함수
         private void UpdateSelected_s1()
         {
-            string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+            string strConn = "Server=[Server Info]"; // edit 20200916
 
             using (MySqlConnection conn = new MySqlConnection(strConn))
             {
@@ -1776,7 +1776,7 @@
                 var resultList = new List<q1>();
                 int indexx = 1;
 
-                string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+                string strConn = "Server=[Server Info]"; // edit 20200916
 
 
                  using (MySqlConnection conn = new MySqlConnection(strConn))
@@ -1834,7 +1834,7 @@
                 int indexx = 1;
 
 
-                string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+                string strConn = "Server=[Server Info]"; // edit 20200916
 
                 using (MySqlConnection connection = new MySqlConnection(strConn))
                 {
@@ -1882,7 +1882,7 @@
         private IEnumerable<q2> GetDiseases2(int n)
         {   
             var preList = new List<q1>();
-            string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+            string strConn = "Server=[Server Info]"; // edit 20200916
            
 
             using (MySqlConnection connection = new MySqlConnection(strConn))
@@ -1991,7 +1991,7 @@
         {
             var data11 = new List<q2>();
 
-            string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+            string strConn = "Server=[Server Info]"; // edit 20200916
 
             using (MySqlConnection connection = new MySqlConnection(strConn))
             {
@@ -2088,7 +2088,7 @@
         private IEnumerable<q4> GetDiseases4(int n)
         {
             var preList = new List<q1>();
-            string strConn = "Server=drmeongdb.mysql.database.azure.com;Database=drmeong;Uid=drmeong_admin@drmeongdb;Pwd=taco127!;";
+            string strConn = "Server=[Server Info]"; // edit 20200916
 
             using (MySqlConnection connection = new MySqlConnection(strConn))
             {
